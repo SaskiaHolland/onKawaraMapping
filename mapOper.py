@@ -33,49 +33,56 @@ def creatingMap():
             html = f'''
                     <!DOCTYPE html>
                     <html>
-                        <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
-                        <img src={link} width="316" height="252" alt={creditline}>
-                        <h3 style="font-family:arial, 'lucida console', sans-serif;">{second_title}</h3>
-                        <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Creator</th>
-                                    <th>Creation date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{creator}</td>
-                                    <td>{date}</td>
-                                </tr>
-                            </tbody>
+                        <head>
+                            <style>
+                                body {{ font-family:arial, 'lucida console', sans-serif;  }}
+                            </style>
+                        </head>
+                        <body>
+                            <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
+                            <img src={link} width="316" height="252" alt={creditline}>
+                            <h3 style="font-family:arial, 'lucida console', sans-serif;">{second_title}</h3>
+                            <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Creator</th>
+                                        <th>Creation date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{creator}</td>
+                                        <td>{date}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Materials and Techniques</th>
-                                    <th>Measurements</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{material}</td>
-                                    <td>{measure}</td>
-                                </tr>
-                            </tbody>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Materials and Techniques</th>
+                                        <th>Measurements</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{material}</td>
+                                        <td>{measure}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Classification</th>
-                                    <th>Related Work</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{classification}</td>
-                                    <td>{serie}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Classification</th>
+                                        <th>Related Work</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{classification}</td>
+                                        <td>{serie}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </body>
                     </html>
                 '''
             iframe = folium.IFrame(html)
@@ -88,48 +95,55 @@ def creatingMap():
             html = f'''
                     <!DOCTYPE html>
                     <html>
-                        <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
-                        <h3 style="font-family:arial, 'lucida console', sans-serif;">{second_title}</h3>
-                        <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Creator</th>
-                                    <th>Creation date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{creator}</td>
-                                    <td>{date}</td>
-                                </tr>
-                            </tbody>
+                        <head>
+                            <style>
+                                body {{ font-family:arial, 'lucida console', sans-serif;  }}
+                            </style>
+                        </head>
+                        <body>
+                        <h2 >{title}</h2>
+                            <h3 >{second_title}</h3>
+                            <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Creator</th>
+                                        <th>Creation date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{creator}</td>
+                                        <td>{date}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Materials and Techniques</th>
-                                    <th>Measurements</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{material}</td>
-                                    <td>{measure}</td>
-                                </tr>
-                            </tbody>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Materials and Techniques</th>
+                                        <th>Measurements</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{material}</td>
+                                        <td>{measure}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Classification</th>
-                                    <th>Related Work</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{classification}</td>
-                                    <td>{serie}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Classification</th>
+                                        <th>Related Work</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{classification}</td>
+                                        <td>{serie}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </body>
                     </html>
             '''
             iframe = folium.IFrame(html)
@@ -142,48 +156,55 @@ def creatingMap():
             html = f'''
                     <!DOCTYPE html>
                     <html>
-                        <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
-                        <img src={link} width="316" height="252" alt={title}>
-                        <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Creator</th>
-                                    <th>Creation date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{creator}</td>
-                                    <td>{date}</td>
-                                </tr>
-                            </tbody>
+                         <head>
+                            <style>
+                                body {{ font-family:arial, 'lucida console', sans-serif;  }}
+                            </style>
+                        </head>
+                        <body>
+                            <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
+                            <img src={link} width="316" height="252" alt={title}>
+                            <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Creator</th>
+                                        <th>Creation date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{creator}</td>
+                                        <td>{date}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Materials and Techniques</th>
-                                    <th>Measurements</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{material}</td>
-                                    <td>{measure}</td>
-                                </tr>
-                            </tbody>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Materials and Techniques</th>
+                                        <th>Measurements</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{material}</td>
+                                        <td>{measure}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Classification</th>
-                                    <th>Related Work</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{classification}</td>
-                                    <td>{serie}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Classification</th>
+                                        <th>Related Work</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{classification}</td>
+                                        <td>{serie}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </body>
                     </html>
                 '''
             iframe = folium.IFrame(html)
@@ -195,47 +216,54 @@ def creatingMap():
             html = f'''
                     <!DOCTYPE html>
                     <html>
-                        <h2 style="font-family:arial, 'lucida console', sans-serif;">{title}</h2>
-                        <table style="height: 126px; width: 370px; font-family:arial, 'lucida console', sans-serif;">
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Creator</th>
-                                    <th>Creation date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{creator}</td>
-                                    <td>{date}</td>
-                                </tr>
-                            </tbody>
+                        <head>
+                            <style>
+                                body {{ font-family:arial, 'lucida console', sans-serif;  }}
+                            </style>
+                        </head>
+                        <body>
+                            <h2>{title}</h2>
+                            <table style="height: 126px; width: 370px;">
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Creator</th>
+                                        <th>Creation date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{creator}</td>
+                                        <td>{date}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Materials and Techniques</th>
-                                    <th>Measurements</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{material}</td>
-                                    <td>{measure}</td>
-                                </tr>
-                            </tbody>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Materials and Techniques</th>
+                                        <th>Measurements</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{material}</td>
+                                        <td>{measure}</td>
+                                    </tr>
+                                </tbody>
 
-                            <thead>
-                                <tr style="text-align: left; color: #72797F; font-size: x-small;">
-                                    <th>Classification</th>
-                                    <th>Related Work</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{classification}</td>
-                                    <td>{serie}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <thead>
+                                    <tr style="text-align: left; color: #72797F; font-size: x-small;">
+                                        <th>Classification</th>
+                                        <th>Related Work</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{classification}</td>
+                                        <td>{serie}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </body>
                     </html>
                 '''
             iframe = folium.IFrame(html)
