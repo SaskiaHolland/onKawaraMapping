@@ -5,7 +5,7 @@ import folium
 
 def creatingMap():
     # plotting all citys as groups
-    m = folium.Map(location=[47.3941, 0.6848], zoom_start=5)
+    m = folium.Map(tiles="cartodb positron", location=[47.3941, 0.6848], zoom_start=5)
 
     #create a marker cluster
     marker_cluster_city = folium.plugins.MarkerCluster(name='city').add_to(m)
